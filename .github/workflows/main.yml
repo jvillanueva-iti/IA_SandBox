@@ -13,13 +13,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: AI powered Automatic PR Body Generation
-        uses: jbrocher/auto-pr-body-generator@v0.2.2
-        with:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
       - name: AI Code Reviewer      
-        uses: freeedcom/ai-codereviewer@v2.7.0
+        uses: jvillanueva-iti/ai-code-reviewer@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
