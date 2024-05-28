@@ -28,11 +28,15 @@ public class Clase
         {  
             return true;  
         }  
-        
-        if(IsBoolMethod () == false)  
-        {  
-            // code  
-        }  
+        try
+        {
+            if(IsBoolMethod () == false)  
+            {  
+                // code  
+            }
+        }
+        catch(Exception ex){}  
+
 
         return "Clase";
     }
