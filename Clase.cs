@@ -5,6 +5,8 @@ public class Clase
 
     public string test()
     {
+        try
+        {
         string result = "";
         
         for (int i = 0; i < 1000; i++)
@@ -36,6 +38,8 @@ public class Clase
             }
         }
         catch(Exception ex){}  
+        }
+        catch(Exception ex) {}
 
 
         return "Clase";
